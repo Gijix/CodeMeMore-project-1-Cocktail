@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}  
+.dropdown-menu-content {
+    display: none;
+    list-style: none;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+}
+.dropdown-menu-content li {
+    margin-bottom: 10px;
+}
+.visible {
+    display: block;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: gold;
+}
+a:hover {
+    color: white;
+}
+  
