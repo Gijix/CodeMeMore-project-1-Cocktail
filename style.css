@@ -46,6 +46,7 @@ ul li {
   font-size: 120%;
   letter-spacing: 2px;
 }
+
 /* Header */
 #header {
   width: 100%;
@@ -81,9 +82,83 @@ ul li {
   background-image: url("logo.jpg");
   background-size: cover;
 }
-/* article */
+/* article choix */
+#choix {
+  width: 100%;
+  height: 300px;
 
-/* Contents */
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choisir {
+  width: 40%;
+  height: 80%;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choisir form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#recherche {
+  margin-top: 20px;
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  color: white;
+  background-color: rgb(0, 0, 28);
+}
+.choisir label {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 130%;
+  letter-spacing: 3px;
+  font-family: "Kitchen Home Regular";
+  /* text-shadow: rgb(131, 79, 30) 7px 7px 7px; */
+  height: 30px;
+}
+.choisir select {
+  align-self: center;
+  background-color: rgb(0, 0, 28);
+  width: 70%;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+.choisir select:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option {
+  width: 60%;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+#proposition {
+  width: 100%;
+  height: 400px;
+  border: 1px solid white;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /*================================*/
 /*=== Partie sur le Swipe Menu ===*/
@@ -101,7 +176,7 @@ ul li {
 #menu-burger .bar3 {
   width: 32px;
   height: 5px;
-  background-color: rgb(216, 43, 193);
+  background-color: rgb(131, 79, 30);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -131,7 +206,7 @@ ul li {
   padding: 4em 2em;
   width: 25%;
   min-height: 100%;
-  box-shadow: 0 0 5px rgb(207, 67, 189);
+  /* box-shadow: 0 0 5px rgb(207, 67, 189); */
 }
 #menu ul li {
   list-style: none;
@@ -221,6 +296,9 @@ ul li {
     width: 100%;
     font-size: 140%;
   }
+  .choisir {
+    width: 70%;
+  }
   /* Animations pour le menu slide */
   @keyframes slideRight {
     from {
@@ -277,6 +355,12 @@ ul li {
     width: 100%;
     font-size: 90%;
     text-align: center;
+  }
+  .choisir {
+    width: 90%;
+  }
+  .choisir select {
+    width: 80%;
   }
   /* Animations pour le menu slide */
   @keyframes slideRight {
