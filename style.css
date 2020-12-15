@@ -1,0 +1,324 @@
+/* Police */
+@font-face {
+  font-family: "Kitchen Home Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kitchen Home Regular"),
+    url("Police/KitchenHome-YzVz2.woff") format("woff");
+}
+@font-face {
+  font-family: "digory_doodlesregular";
+  src: url("Police/Digory_Doodles_PS-webfont.eot");
+  src: url("Police/Digory_Doodles_PS-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Police/Digory_Doodles_PS-webfont.woff2") format("woff2"),
+    url("Police/Digory_Doodles_PS-webfont.woff") format("woff"),
+    url("Police/Digory_Doodles_PS-webfont.ttf") format("truetype"),
+    url("Police/Digory_Doodles_PS-webfont.svg#digory_doodlesregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Modification Principale */
+* {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+a img {
+  border: 0;
+}
+body {
+  background-image: url("Image/imageFond.jpg");
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+}
+#container {
+  width: 65vw;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(0, 0, 28);
+  color: white;
+  box-shadow: 0px 0px 50px black;
+}
+ul li {
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+/* Header */
+#header {
+  width: 100%;
+  /* padding-top: 8em; */
+  line-height: 16em;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+.identite {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 150px;
+  width: 100%;
+  justify-content: space-around;
+}
+.titre {
+  color: white;
+  height: 50px;
+  width: 70%;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  font-size: 150%;
+  font-family: "digory_doodlesregular", Arial, Helvetica, sans-serif;
+  text-align: start;
+}
+#logosite {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  width: 30%;
+  height: 150px;
+  background-image: url("logo.jpg");
+  background-size: cover;
+}
+/* article */
+
+/* Contents */
+
+/*================================*/
+/*=== Partie sur le Swipe Menu ===*/
+/*================================*/
+/* Menu burger */
+#menu-burger {
+  position: absolute;
+  top: 4.5em;
+  right: 2.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: rgb(216, 43, 193);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+#menu-burger:hover {
+  opacity: 0.75;
+  transition: 0.5s;
+}
+#menu-burger.clicked .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+#menu-burger.clicked .bar2 {
+  opacity: 0;
+}
+#menu-burger.clicked .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Main menu (slide) */
+#menu {
+  position: fixed;
+  z-index: 9999;
+  left: -25%;
+  top: auto;
+  background: rgb(0, 0, 28);
+  padding: 4em 2em;
+  width: 25%;
+  min-height: 100%;
+  box-shadow: 0 0 5px rgb(207, 67, 189);
+}
+#menu ul li {
+  list-style: none;
+}
+#menu ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  background: #2c3e50;
+  transition: background 0.5s;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px rgb(216, 43, 193);
+  border-radius: 20px;
+}
+#menu ul li a:hover {
+  background: rgb(207, 67, 189);
+  transition: background 0.5s;
+}
+#menu.visible {
+  animation: 0.5s slideRight ease-in forwards;
+  transition-delay: 0;
+}
+#menu.invisible {
+  animation: 1s slideLeft ease-out forwards;
+  transition-delay: 0;
+}
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@-webkit-keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+@-webkit-keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  #menu-burger {
+    position: absolute;
+    top: 2.5em;
+  }
+  #menu {
+    left: -50%;
+    width: 50%;
+  }
+  #menu-burger.clicked {
+    position: fixed;
+  }
+  #main-block,
+  #second-block {
+    padding: 4em 2em;
+  }
+  #logosite,
+  .logo {
+    display: none;
+  }
+  .titre {
+    width: 100%;
+    font-size: 140%;
+  }
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #menu-burger {
+    top: 7em;
+    right: 2em;
+    z-index: 9999;
+  }
+  #menu {
+    left: -100%;
+    width: 100%;
+  }
+  #second-block #google-maps {
+    width: 100%;
+    margin-right: 0;
+  }
+  #second-block #contact-form {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .titre {
+    width: 100%;
+    font-size: 90%;
+    text-align: center;
+  }
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+}
+@media (max-width: 315px) {
+  .titre {
+    display: none;
+  }
+  #menu-burger {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+}
