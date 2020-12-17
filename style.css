@@ -19,14 +19,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "black_jackregular";
+  src: url("Police/blackjack-webfont.eot");
+  src: url("Police/blackjack-webfont.eot?#iefix") format("embedded-opentype"),
+    url("Police/blackjack-webfont.woff2") format("woff2"),
+    url("Police/blackjack-webfont.woff") format("woff"),
+    url("Police/blackjack-webfont.ttf") format("truetype"),
+    url("Police/blackjack-webfont.svg#black_jackregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Modification Principale */
 * {
   font-size: 1em;
   box-sizing: border-box;
 }
-a img {
-  border: 0;
-}
+
 body {
   background-image: url("Image/imageFond.jpg");
   background-size: cover;
@@ -35,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
 }
-#container {
+.container {
   width: 65vw;
   height: 100%;
   margin: 0;
@@ -232,6 +241,74 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+/* Template Recette  */
+.recetteFont {
+  color: #834f1e;
+  font-family: "Lato";
+}
+
+.recetteFont h1 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+}
+
+.descriptif h2,
+.listeIngredients h2 {
+  font-size: 25px;
+}
+ {
+  font-size: 25px;
+}
+
+.presentation {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
+}
+.photoCocktail {
+  min-width: 210px;
+  width: 30%;
+}
+.photo {
+  border-radius: 100%;
+  box-shadow: 0 0 10px white;
+}
+
+.descriptif {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 50px;
+  color: white;
+}
+
+.listeIngredients {
+  padding-left: 20px;
+  color: #9a16ac;
+  width: 100%;
+  border: 1px solid rgb(131, 79, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(131, 79, 30);
+  background-color: white;
+}
+
+.ingredientCocktail {
+  display: flex;
+  margin: 50px 50px 20px 50px;
+}
+
+.preparation {
+  text-align: center;
+}
 /*================================*/
 /*=== Partie sur le Swipe Menu ===*/
 /*================================*/
@@ -346,7 +423,7 @@ body {
 @media (max-width: 1024px) {
   #menu-burger {
     position: absolute;
-    top: 2.5em;
+    top: 5.5em;
   }
   #menu {
     left: -50%;
@@ -367,6 +444,7 @@ body {
   .titre {
     width: 100%;
     font-size: 140%;
+    text-align: center;
   }
   /* index media 1024 */
   .choisir {
@@ -446,7 +524,7 @@ body {
     margin-top: 2em;
   }
   /* principal media 600 */
-  #container {
+  .container {
     width: 100vw;
   }
   /* header media 600 */
@@ -484,6 +562,12 @@ body {
     border-radius: 20px;
     border: 1px solid rgb(131, 79, 30);
     box-shadow: 0 0 5px rgb(131, 79, 30);
+  }
+  /* footer media 600 */
+  .mention,
+  .politique,
+  .condition {
+    display: none;
   }
   /* Animations pour le menu slide */
   @keyframes slideRight {

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Accueil - Shake it Yourself</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Recette Gin Fizz</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav id="menu">
       <ul>
-        <li><a href="#">Accueil</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="#">Recettes</a></li>
         <li><a href="#">Tuto / Matériel</a></li>
         <li><a href="#">Recette de saison</a></li>
@@ -35,71 +37,48 @@
           </div>
         </div>
       </header>
-      <article id="choix">
-        <section class="choisir">
-          <form>
-            <label for="ingredient1 ingredient2 ingredient3"
-              >What's your poison ?</label
-            >
+      <div class="recetteFont">
+        <h1>Le Gin Fizz</h1>
 
-            <select name="ingredient1" id="ingredient1">
-              <option value="">Premier ingrédient</option>
-              <optgroup label="Alcool Blanc">
-                <option value="vodka">Vodka</option>
-                <option value="tequila">Tequila</option>
-                <option value="mescal">Mescal</option>
-                <option value="gin">Gin</option>
-              </optgroup>
-              <optgroup label="Alcool Brun">
-                <option value="whisky">Whisky</option>
-                <option value="cognac">Cognac</option>
-                <option value="rhum">Rhum</option>
-              </optgroup>
-              <optgroup label="Divers">
-                <option value="oeuf">Oeuf</option>
-                <option value="citron">Citron</option>
-                <option value="orgeat">Sirop d'orgeat</option>
-                <option value="ananas">Jus d'ananas</option>
-                <option value="pamplemousse">Jus de pamplemousse</option>
-                <option value="grenadine">Sirop de grenadine</option>
-              </optgroup>
-            </select>
-            <select name="ingredient2" id="ingredient2">
-              <option value="">Deuxième ingrédient</option>
-              <optgroup label="Alcool Blanc">
-                <option value="vodka">Vodka</option>
-                <option value="tequila">Tequila</option>
-                <option value="mescal">Mescal</option>
-                <option value="gin">Gin</option>
-              </optgroup>
-              <optgroup label="Alcool Brun">
-                <option value="whisky">Whisky</option>
-                <option value="cognac">Cognac</option>
-                <option value="rhum">Rhum</option>
-              </optgroup>
-              <optgroup label="Divers">
-                <option value="oeuf">Oeuf</option>
-                <option value="citron">Citron</option>
-                <option value="orgeat">Sirop d'orgeat</option>
-                <option value="ananas">Jus d'ananas</option>
-                <option value="pamplemousse">Jus de pamplemousse</option>
-                <option value="grenadine">Sirop de grenadine</option>
-              </optgroup>
-            </select>
-
-            <input
-              type="button"
-              value="Découvrir"
-              id="recherche"
-              onclick="location.href='ginFizz.html';"
+        <div class="presentation">
+          <div class="photoCocktail">
+            <img
+              class="photo"
+              src="ginfizz.jpg"
+              width="200"
+              height="200"
+              alt="gin fizz"
             />
-          </form>
-        </section>
-      </article>
-      <article id="proposition">
-        <section class="cocktailMois"></section>
-        <section class="cocktailFavori"></section>
-      </article>
+          </div>
+          <div class="descriptif">
+            <h2>Pour un instant rafraîchissant</h2>
+            <p>
+              Le gin fizz est un classique créé à la fin du XIXème siècle par la
+              marine britannique. Riche en vitamines C, il apporte un mélange de
+              saveurs sucrées et acidulées !
+            </p>
+          </div>
+        </div>
+
+        <article class="ingredientCocktail">
+          <section class="listeIngredients">
+            <h2>Ingrédients :</h2>
+            <ul>
+              <li>Gin : 5 cl</li>
+              <li>Jus de citron : 3 cl</li>
+              <li>Sirop de sucre de canne : 2 cl</li>
+              <li>Eau gazeuse : 10 cl</li>
+            </ul>
+          </section>
+        </article>
+
+        <div class="preparation">
+          <p>
+            À mélanger au shaker, verser dans un verre et ajouter l'eau gazeuse.
+          </p>
+          <p><strong>Enjoy !</strong></p>
+        </div>
+      </div>
       <footer>
         <div class="contenu-footer">
           <div class="telechargement">
