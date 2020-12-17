@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Accueil - Shake it Yourself</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Recettes</a></li>
+        <li><a href="#">Tuto / Matériel</a></li>
+        <li><a href="#">Recette de saison</a></li>
+        <li><a href="#">A propos</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header id="header">
+        <div id="menu-burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="identite">
+          <h1 class="titre"><a href="index.html">Shake it Yourself</a></h1>
+          <div class="logo">
+            <img src="Image/logo.jpg" alt="logo site" id="logosite" />
+          </div>
+        </div>
+      </header>
+      <article id="choix">
+        <section class="choisir">
+          <form>
+            <label for="ingredient1 ingredient2 ingredient3"
+              >What's your poison ?</label
+            >
+
+            <select name="ingredient1" id="ingredient1">
+              <option value="">Premier ingrédient</option>
+              <optgroup label="Alcool Blanc">
+                <option value="vodka">Vodka</option>
+                <option value="tequila">Tequila</option>
+                <option value="mescal">Mescal</option>
+                <option value="gin">Gin</option>
+              </optgroup>
+              <optgroup label="Alcool Brun">
+                <option value="whisky">Whisky</option>
+                <option value="cognac">Cognac</option>
+                <option value="rhum">Rhum</option>
+              </optgroup>
+              <optgroup label="Divers">
+                <option value="oeuf">Oeuf</option>
+                <option value="citron">Citron</option>
+                <option value="orgeat">Sirop d'orgeat</option>
+                <option value="ananas">Jus d'ananas</option>
+                <option value="pamplemousse">Jus de pamplemousse</option>
+                <option value="grenadine">Sirop de grenadine</option>
+              </optgroup>
+            </select>
+            <select name="ingredient2" id="ingredient2">
+              <option value="">Deuxième ingrédient</option>
+              <optgroup label="Alcool Blanc">
+                <option value="vodka">Vodka</option>
+                <option value="tequila">Tequila</option>
+                <option value="mescal">Mescal</option>
+                <option value="gin">Gin</option>
+              </optgroup>
+              <optgroup label="Alcool Brun">
+                <option value="whisky">Whisky</option>
+                <option value="cognac">Cognac</option>
+                <option value="rhum">Rhum</option>
+              </optgroup>
+              <optgroup label="Divers">
+                <option value="oeuf">Oeuf</option>
+                <option value="citron">Citron</option>
+                <option value="orgeat">Sirop d'orgeat</option>
+                <option value="ananas">Jus d'ananas</option>
+                <option value="pamplemousse">Jus de pamplemousse</option>
+                <option value="grenadine">Sirop de grenadine</option>
+              </optgroup>
+            </select>
+
+            <input
+              type="button"
+              value="Découvrir"
+              id="recherche"
+              onclick="location.href='ginFizz.html';"
+            />
+          </form>
+        </section>
+      </article>
+      <article id="proposition">
+        <section class="cocktailMois"></section>
+        <section class="cocktailFavori"></section>
+      </article>
+      <footer>
+        <div class="contenu-footer">
+          <div class="telechargement">
+            <div class="titreTelechargement">
+              <h3>Télécharge l'Appli</h3>
+            </div>
+            <div class="imgstore">
+              <a href="#"><img src="Image/appStore.png" alt="" /></a>
+
+              <a href="#"><img src="Image/playstore.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="contact">
+            <h3>Restons en contact</h3>
+            <li><a href="formulaire.html">formulaire de contact</a></li>
+            <p>9 rue du code, San Francisco,</p>
+          </div>
+
+          <div class="reseaux">
+            <h3>Nos réseaux</h3>
+            <ul class="listeMedia">
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/twitter.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/isntagram.jpeg"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/facebook.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/YouTube.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p id="copyright">
+            Copyright &copy; 2020 Shake it Yourself by CodeMeMore
+          </p>
+          <p class="mention">
+            <a href="mentions_légales.html">Mentions légales</a>
+          </p>
+          <p class="condition">
+            <a href="condition_generales_d_utilisation.html"
+              >Conditions générales d'utilisation</a
+            >
+          </p>
+          <p class="politique">
+            <a href="politique_de_confidentialite.html"
+              >Politique de confidentialité</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/swipe-menu.js" async></script>
+  </body>
 </html>

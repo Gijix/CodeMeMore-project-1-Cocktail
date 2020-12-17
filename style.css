@@ -1,0 +1,638 @@
+/* Police */
+@font-face {
+  font-family: "Kitchen Home Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kitchen Home Regular"),
+    url("Police/KitchenHome-YzVz2.woff") format("woff");
+}
+@font-face {
+  font-family: "digory_doodlesregular";
+  src: url("Police/Digory_Doodles_PS-webfont.eot");
+  src: url("Police/Digory_Doodles_PS-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Police/Digory_Doodles_PS-webfont.woff2") format("woff2"),
+    url("Police/Digory_Doodles_PS-webfont.woff") format("woff"),
+    url("Police/Digory_Doodles_PS-webfont.ttf") format("truetype"),
+    url("Police/Digory_Doodles_PS-webfont.svg#digory_doodlesregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "black_jackregular";
+  src: url("Police/blackjack-webfont.eot");
+  src: url("Police/blackjack-webfont.eot?#iefix") format("embedded-opentype"),
+    url("Police/blackjack-webfont.woff2") format("woff2"),
+    url("Police/blackjack-webfont.woff") format("woff"),
+    url("Police/blackjack-webfont.ttf") format("truetype"),
+    url("Police/blackjack-webfont.svg#black_jackregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Modification Principale */
+* {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Image/imageFond.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 65vw;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(0, 0, 28);
+  color: white;
+  box-shadow: 0px 0px 50px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#menu ul li {
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+/* Header */
+#header {
+  width: 100%;
+  line-height: 16em;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+.identite {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 150px;
+  width: 100%;
+  justify-content: space-around;
+}
+.titre {
+  height: 50px;
+  width: 70%;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  font-size: 150%;
+  font-family: "digory_doodlesregular", Arial, Helvetica, sans-serif;
+  text-align: start;
+}
+.titre a {
+  color: white;
+  text-decoration: none;
+}
+#logosite {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  width: 30%;
+  height: 150px;
+  background-image: url("logo.jpg");
+  background-size: cover;
+}
+/* article */
+#choix {
+  width: 100%;
+  height: 300px;
+
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choisir {
+  width: 40%;
+  height: 80%;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choisir form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#recherche {
+  margin-top: 20px;
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  color: white;
+  background-color: rgb(0, 0, 28);
+}
+.choisir label {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 130%;
+  letter-spacing: 3px;
+  font-family: "Kitchen Home Regular";
+  /* text-shadow: rgb(131, 79, 30) 7px 7px 7px; */
+  height: 30px;
+}
+.choisir select {
+  align-self: center;
+  background-color: rgb(0, 0, 28);
+  width: 70%;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+.choisir select:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option {
+  width: 60%;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+#proposition {
+  width: 100%;
+  height: 40vh;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cocktailMois,
+.cocktailFavori {
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+/* Footer */
+
+.contenu-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 65vw;
+}
+.contenu-footer li {
+  list-style: none;
+}
+.contenu-footer a {
+  text-decoration: none;
+  color: white;
+}
+.reseaux {
+  text-align: center;
+}
+.copyright {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+.listeMedia img {
+  width: 20px;
+  border-radius: 5px;
+}
+
+.telechargement {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.titreTelechargement {
+  padding: 0px;
+}
+.telechargement img {
+  width: 30%;
+  margin-top: -10px;
+}
+.media {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.listeMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Template Recette  */
+.recetteFont {
+  color: #834f1e;
+  font-family: "Lato";
+}
+
+.recetteFont h1 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+}
+
+.descriptif h2,
+.listeIngredients h2 {
+  font-size: 25px;
+}
+ {
+  font-size: 25px;
+}
+
+.presentation {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
+}
+.photoCocktail {
+  min-width: 210px;
+  width: 30%;
+}
+.photo {
+  border-radius: 100%;
+  box-shadow: 0 0 10px white;
+}
+
+.descriptif {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 50px;
+  color: white;
+}
+
+.listeIngredients {
+  padding-left: 20px;
+  color: #9a16ac;
+  width: 100%;
+  border: 1px solid rgb(131, 79, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(131, 79, 30);
+  background-color: white;
+}
+
+.ingredientCocktail {
+  display: flex;
+  margin: 50px 50px 20px 50px;
+}
+
+.preparation {
+  text-align: center;
+}
+/*================================*/
+/*=== Partie sur le Swipe Menu ===*/
+/*================================*/
+/* Menu burger */
+#menu-burger {
+  position: absolute;
+  top: 4.5em;
+  right: 2.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: rgb(131, 79, 30);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+#menu-burger:hover {
+  opacity: 0.75;
+  transition: 0.5s;
+}
+#menu-burger.clicked .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+#menu-burger.clicked .bar2 {
+  opacity: 0;
+}
+#menu-burger.clicked .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Main menu (slide) */
+#menu {
+  position: fixed;
+  z-index: 5555;
+  left: -25%;
+  top: auto;
+  background: rgb(0, 0, 28);
+  padding: 4em 2em;
+  width: 25%;
+  min-height: 100%;
+}
+#menu ul li {
+  list-style: none;
+}
+#menu ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  background: #2c3e50;
+  transition: background 0.5s;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px rgb(216, 43, 193);
+  border-radius: 20px;
+}
+#menu ul li a:hover {
+  background: rgb(99, 19, 88);
+  transition: background 0.5s;
+}
+#menu.visible {
+  animation: 0.5s slideRight ease-in forwards;
+  transition-delay: 0;
+}
+#menu.invisible {
+  animation: 1s slideLeft ease-out forwards;
+  transition-delay: 0;
+}
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@-webkit-keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+@-webkit-keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  #menu-burger {
+    position: absolute;
+    top: 5.5em;
+  }
+  #menu {
+    left: -50%;
+    width: 50%;
+  }
+  #menu-burger.clicked {
+    position: fixed;
+  }
+  #main-block,
+  #second-block {
+    padding: 4em 2em;
+  }
+  /* header media 1024 */
+  #logosite,
+  .logo {
+    display: none;
+  }
+  .titre {
+    width: 100%;
+    font-size: 140%;
+    text-align: center;
+  }
+  /* index media 1024 */
+  .choisir {
+    width: 60%;
+  }
+  .cocktailMois {
+    margin-bottom: 20px;
+  }
+  .cocktailMois,
+  .cocktailFavori {
+    width: 90%;
+    height: 60%;
+    border-radius: 20px;
+    border: 1px solid rgb(131, 79, 30);
+    box-shadow: 0 0 5px rgb(131, 79, 30);
+  }
+  /* Footer media 1024 */
+  .contact,
+  .telechargement,
+  .reseaux,
+  .politique,
+  .mention,
+  .condition {
+    display: none;
+  }
+
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #menu-burger {
+    top: 7em;
+    right: 2em;
+    z-index: 9999;
+  }
+  #menu {
+    left: -100%;
+    width: 100%;
+  }
+  #second-block #google-maps {
+    width: 100%;
+    margin-right: 0;
+  }
+  #second-block #contact-form {
+    width: 100%;
+    margin-top: 2em;
+  }
+  /* principal media 600 */
+  .container {
+    width: 100vw;
+  }
+  /* header media 600 */
+  .titre {
+    width: 100%;
+    font-size: 90%;
+    text-align: center;
+  }
+  /* index media 600 */
+  .choisir option {
+    width: 70%;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  .choisir select {
+    margin-top: 10px;
+  }
+  #choix {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .choisir {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .cocktailMois {
+    margin-bottom: 20px;
+  }
+  .cocktailMois,
+  .cocktailFavori {
+    width: 90%;
+    height: 60%;
+    border-radius: 20px;
+    border: 1px solid rgb(131, 79, 30);
+    box-shadow: 0 0 5px rgb(131, 79, 30);
+  }
+  /* footer media 600 */
+  .mention,
+  .politique,
+  .condition {
+    display: none;
+  }
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+}
+@media (max-width: 315px) {
+  #menu-burger {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+  /* header media 315 */
+  .titre {
+    display: none;
+  }
+  /* Index */
+  #choix {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .choisir {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .choisir option {
+    width: 90%;
+    padding-top: 3px;
+    margin-top: 2px;
+  }
+  .choisir select {
+    margin-top: 5px;
+  }
+  .choisir form {
+    justify-content: space-between;
+  }
+}
