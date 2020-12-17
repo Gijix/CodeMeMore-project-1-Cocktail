@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="js/swipe-menu.js" async></script>
   </head>
   <body>
     <nav id="menu">
@@ -30,11 +29,9 @@
           <div class="bar3"></div>
         </div>
         <div class="identite">
-          <h1 class="titre">Shake it Yourself</h1>
+          <h1 class="titre"><a href="index.html">Shake it Yourself</a></h1>
           <div class="logo">
-            <a href="index.html"
-              ><img src="Image/logo.jpg" alt="logo site" id="logosite"
-            /></a>
+            <img src="Image/logo.jpg" alt="logo site" id="logosite" />
           </div>
         </div>
       </header>
@@ -83,7 +80,12 @@
               <option value="cognac">Cognac</option>
               <option value="rhum">Rhum</option>
             </select>
-            <input type="button" value="Découvrir" id="recherche" />
+            <input
+              type="button"
+              value="Découvrir"
+              id="recherche"
+              onclick="location.href='index.html';"
+            />
           </form>
         </section>
       </article>
@@ -148,13 +150,15 @@
           <p id="copyright">
             Copyright &copy; 2020 Shake it Yourself by CodeMeMore
           </p>
-          <p><a href="mentions_légales.html">Mentions légales</a></p>
-          <p>
+          <p class="mention">
+            <a href="mentions_légales.html">Mentions légales</a>
+          </p>
+          <p class="condition">
             <a href="condition_generales_d_utilisation.html"
               >Conditions générales d'utilisation</a
             >
           </p>
-          <p>
+          <p class="politique">
             <a href="politique_de_confidentialite.html"
               >Politique de confidentialité</a
             >
@@ -162,5 +166,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/swipe-menu.js" async></script>
   </body>
 </html>
