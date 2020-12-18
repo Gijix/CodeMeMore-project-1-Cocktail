@@ -30,6 +30,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.mentions {
+  padding: 150px 40px;
+}
+
+#formulaire{
+  padding: 10%;
+
+}
+input{
+  margin: 5px 0px;
+}
+
 /* Modification Principale */
 * {
   font-size: 1em;
