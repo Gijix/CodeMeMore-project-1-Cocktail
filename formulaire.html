@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home/yann/Documents/projet-cocktail/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <nav id="menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Recettes</a></li>
+          <li><a href="#">Tuto / Matériel</a></li>
+          <li><a href="#">Recette de saison</a></li>
+          <li><a href="#">A propos</a></li>
+        </ul>
+      </nav>
+  
+      <div class="container">
+        <header id="header">
+          <div id="menu-burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="identite">
+            <h1 class="titre"><a href="index.html">Shake it Yourself</a></h1>
+            <div class="logo">
+              <img src="Image/logo.jpg" alt="logo site" id="logosite" />
+            </div>
+          </div>
+        </header>
 
-    <form action="">
-        <legend>nous contacter</legend>
-
+    <form id="formulaire" action="">
+        <h2>Nous contacter</h2>
+        <br>
         <label for="prénom"> Entrez votre prénom </label>
         <input type="text" id ="prenom" name="prenom">
 
@@ -28,47 +52,77 @@
     </form>
 
     <footer>
-        <div class="contenu-footer"></div>
+        <div class="contenu-footer">
+          <div class="telechargement">
+            <div class="titreTelechargement">
+              <h3>Télécharge l'Appli</h3>
+            </div>
+            <div class="imgstore">
+              <a href="#"><img src="Image/appStore.png" alt="" /></a>
 
-        <div class="telechargement">
-            <h3>Télécharge l'Appli</h3>
-            <ul>
-                <li><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/playstore.png" alt=""></a></li>
-                <li><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/appStore.png" alt=""></a></li>
+              <a href="#"><img src="Image/playstore.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="contact">
+            <h3>Restons en contact</h3>
+            <li><a href="formulaire.html">formulaire de contact</a></li>
+            <p>9 rue du code, San Francisco,</p>
+          </div>
+
+          <div class="reseaux">
+            <h3>Nos réseaux</h3>
+            <ul class="listeMedia">
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/twitter.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/isntagram.jpeg"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/facebook.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
+              <li class="media">
+                <a href="#"
+                  ><img
+                    src="images réseaux/YouTube.png"
+                    alt="icones réseaux sociaux"
+                /></a>
+              </li>
             </ul>
+          </div>
         </div>
-         
-            <div class="mentions">
-                <h3>Légal</h3>
-                <ul>
-                    <li><a href="/home/yann/Documents/projet-cocktail/mentions_légales.html">Mentions légales</a></li>
-                    <li><a href="/home/yann/Documents/projet-cocktail/condition_generales_d_utilisation.html">Conditions générales d'utilisation</a></li>
-                    <li><a href="/home/yann/Documents/projet-cocktail/politique_de_confidentialite.html">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <h3><a href="formulaire.html"></a>Restons en contact</a></h3>
-                <p>9 rue du code, San Francisco,</p>
-                <p>ShakeItYourself@gmail.com</p>
-              </div>
-
-            <div class="reseaux">
-                <h3>Nos réseaux</h3>
-                <ul class="liste">
-                    <li class="media"><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/twitter.png" alt="icones réseaux sociaux"></a></li>
-                    <li class="media"><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/isntagram.jpeg" alt="icones réseaux sociaux"></a></li>
-                    <li class="media"><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/facebook.png" alt="icones réseaux sociaux"></a></li>
-                    <li class="media"><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/YouTube.png" alt="icones réseaux sociaux"></a></li>
-                    <li class="media"><a href="#"><img src="/home/yann/Documents/projet-cocktail/images réseaux/GitHub-Mark.png" alt="icones réseaux sociaux"></a></li>
-                   
-                </ul>
-            </div>
-            
-            <p id="copyright">Copyright &copy; 2020 Shake it Yourself by CodeMeMore</p> 
-           
-                
-    </footer>
+        <div class="copyright">
+          <p id="copyright">
+            Copyright &copy; 2020 Shake it Yourself by CodeMeMore
+          </p>
+          <p class="mention">
+            <a href="mentions_légales.html">Mentions légales</a>
+          </p>
+          <p class="condition">
+            <a href="condition_generales_d_utilisation.html"
+              >Conditions générales d'utilisation</a
+            >
+          </p>
+          <p class="politique">
+            <a href="politique_de_confidentialite.html"
+              >Politique de confidentialité</a
+            >
+          </p>
+        </div>
+      </footer>
     
 </body>
 </html>
