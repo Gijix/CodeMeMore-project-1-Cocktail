@@ -120,6 +120,12 @@ const cocktailsToAdopt = [
       picture:"Image/jackRose.jpg",
       url:"jackRose.html",
       ingredients: "calvados citron grenadine œuf"
+    },
+    {
+      name:"Cosmopolitan",
+      picture:"Images/cosmopolitan.jpg",
+      url:"cosmopolitan.html",
+      ingredients: "vodka triple sec cranberrie citron vert"
     }
   ];
 function createCard(title, image, adress) {
