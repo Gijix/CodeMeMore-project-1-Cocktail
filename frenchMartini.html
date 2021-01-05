@@ -35,77 +35,45 @@
           </div>
         </div>
       </header>
-      <article id="choix">
-        <section class="choisir">
-          <form>
-            <label for="ingredient1 ingredient2 ingredient3"
-              >What's your poison ?</label
-            >
+      <div class="recetteFont">
+        <h1>Le French Martini</h1>
 
-            <select name="ingredient1" id="ingredient1">
-              <option value="">Premier ingrédient</option>
-              <optgroup label="Alcool Blanc">
-                <option value="vodka">Vodka</option>
-                <option value="tequila">Tequila</option>
-                <option value="mescal">Mescal</option>
-                <option value="gin">Gin</option>
-              </optgroup>
-              <optgroup label="Alcool Brun">
-                <option value="whisky">Whisky</option>
-                <option value="cognac">Cognac</option>
-                <option value="rhum">Rhum</option>
-              </optgroup>
-              <optgroup label="Divers">
-                <option value="oeuf">Oeuf</option>
-                <option value="citron">Citron</option>
-                <option value="orgeat">Sirop d'orgeat</option>
-                <option value="ananas">Jus d'ananas</option>
-                <option value="pamplemousse">Jus de pamplemousse</option>
-                <option value="grenadine">Sirop de grenadine</option>
-              </optgroup>
-            </select>
-            <select name="ingredient2" id="ingredient2">
-              <option value="">Deuxième ingrédient</option>
-              <optgroup label="Alcool Blanc">
-                <option value="vodka">Vodka</option>
-                <option value="tequila">Tequila</option>
-                <option value="mescal">Mescal</option>
-                <option value="gin">Gin</option>
-              </optgroup>
-              <optgroup label="Alcool Brun">
-                <option value="whisky">Whisky</option>
-                <option value="cognac">Cognac</option>
-                <option value="rhum">Rhum</option>
-              </optgroup>
-              <optgroup label="Divers">
-                <option value="œuf">Oeuf</option>
-                <option value="citron">Citron</option>
-                <option value="orgeat">Sirop d'orgeat</option>
-                <option value="ananas">Jus d'ananas</option>
-                <option value="pamplemousse">Jus de pamplemousse</option>
-                <option value="grenadine">Sirop de grenadine</option>
-              </optgroup>
-            </select>
-
-            <input
-              type="button"
-              value="Découvrir"
-              id="recherche"
+        <div class="presentation">
+          <div class="photoCocktail">
+            <img
+              class="photo"
+              src="Image/frenchmartini.jpg"
+              width="200"
+              height="200"
+              alt="french martini"
             />
-          </form>
-        </section>
-      </article>
-      <article class="cards"></article>
-      <article id="proposition">
-        <section class="cocktailMois">
-          <h1><a href="hotToddie.html">Cocktail Du Mois</a></h1>
-          <div class="imgCocktailMois"><img src= "Image/hotToddie.jpg" alt="image cocktail Hot Toddie" width="400" height="350"></div>
-        </section>
-        <section class="cocktailFavori">
-          <h1><a href="godFather.html">Cocktail Favori</a></h1>
-          <div class="imgCocktailFavori"><img src="Image/godFather.jpg" alt="image cocktail god father" width="400" height="350"></div>
-        </section>
-      </article>
+          </div>
+          <div class="descriptif">
+            <h2>La french touch</h2>
+            <p>
+              Le french martini fut inventé à New York dans les années 80.
+              Laissez-vous surprendre par la puissance de la vodka et la douceur
+              de l'ananas
+            </p>
+          </div>
+        </div>
+
+        <article class="ingredientCocktail">
+          <section class="listeIngredients">
+            <h2>Ingrédients :</h2>
+            <ul>
+              <li>Vodka : 4 cl</li>
+              <li>Liqueur de framboise : 2 cl</li>
+              <li>Jus d'ananas : 4 cl</li>
+            </ul>
+          </section>
+        </article>
+
+        <div class="preparation">
+          <p>À mélanger au shaker, verser dans un verre.</p>
+          <p><strong>Enjoy !</strong></p>
+        </div>
+      </div>
       <footer>
         <div class="contenu-footer">
           <div class="telechargement">
@@ -120,9 +88,9 @@
           </div>
 
           <div class="contact">
-            <h3><a href="formulaire.html"></a>Restons en contact</a></h3>
+            <h3>Restons en contact</h3>
+            <li><a href="formulaire.html">formulaire de contact</a></li>
             <p>9 rue du code, San Francisco,</p>
-            <p>ShakeItYourself@gmail.com</p>
           </div>
 
           <div class="reseaux">
@@ -180,6 +148,5 @@
       </footer>
     </div>
     <script src="js/swipe-menu.js" async></script>
-    <script src="search.js"></script>
   </body>
 </html>

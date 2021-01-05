@@ -11,7 +11,6 @@
   src: url("Police/Digory_Doodles_PS-webfont.eot");
   src: url("Police/Digory_Doodles_PS-webfont.eot?#iefix")
       format("embedded-opentype"),
-    url("Police/Digory_Doodles_PS-webfont.woff2") format("woff2"),
     url("Police/Digory_Doodles_PS-webfont.woff") format("woff"),
     url("Police/Digory_Doodles_PS-webfont.ttf") format("truetype"),
     url("Police/Digory_Doodles_PS-webfont.svg#digory_doodlesregular")
@@ -29,6 +28,47 @@
     url("Police/blackjack-webfont.svg#black_jackregular") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.cards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(1, 2, 63);
+  border-radius: 10px;
+  width: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-img {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("ginfizz.jpg");
+  height: 200px;
+  width: 100%;
+}
+.card-body {
+  padding: 10px 20px;
+}
+.card-body h2 {
+  margin: 10px 0px;
+}
+.card-button {
+  color: rgb(212, 16, 212);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: rgb(49, 0, 41);
+  width: 100%;
+}
+.card-title {
+  text-align: center;
 }
 
 .mentions {
