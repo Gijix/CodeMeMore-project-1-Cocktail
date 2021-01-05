@@ -322,6 +322,69 @@ body {
 .descriptionAbdou h2 {
   font-size: 25px;
 }
+
+/* PAGE TUTORIEL */
+.titreTutorielPage {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+}
+.titreMateriel {
+  text-align: left;
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: grey 1px 1px 0px;
+  color: #834f1e;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.materiel {
+  border: 1px white solid;
+  height: 20%;
+}
+.elementsMateriel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80%;
+  border: 1px solid white;
+}
+.materielCard {
+  width: 300px;
+  border: 1px solid white;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.materielCard h3 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 150%;
+}
+.materielCard p {
+  text-align: center;
+  font-family: "Lato";
+}
+.imgShaker,
+.imgSpoon,
+.imgJigger,
+.imgStrainer,
+.imgFineStrainer {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  align-self: center;
+}
+
 /* Footer */
 
 .contenu-footer {
