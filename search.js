@@ -65,7 +65,7 @@ const cocktailsToAdopt = [
       name:"Old Fashioned",
       picture:"Image/oldFashioned.jpg",
       url:"oldFashioned.html",
-      ingredients: "gin citron soda sirop sucre"
+      ingredients: "whisky angostrura bitter sirop sucre"
     },
     {
       name:"Margarita",
