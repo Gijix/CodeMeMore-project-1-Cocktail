@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>A propos</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Accueil - Shake it Yourself</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
   </head>
   <body>
     <nav id="menu">
@@ -22,7 +20,6 @@
         <li><a href="about.html">A propos</a></li>
       </ul>
     </nav>
-
     <div class="container">
       <header id="header">
         <div id="menu-burger">
@@ -33,28 +30,47 @@
         <div class="identite">
           <h1 class="titre"><a href="index.html">Shake it Yourself</a></h1>
           <div class="logo">
-            <img src="Image/logo.jpg" alt="logo site" id="logosite" />
+            <img src="../Image/logo.jpg" alt="logo site" id="logosite" />
           </div>
         </div>
       </header>
-      
-      <section class="about">
-        <h1>À propos</h1>
-        <div class="about-text">
-          <p>Shake it yourself est le site de cocktails qui vous permet de trouver plusieurs recettes en fonction des ingrédients que vous avez chez vous. Je souhaite rendre accesible la réalisation et la consommation de grands classiques.</p>
-          <p> Ainsi, vous pourrez trouver votre cocktail idéal selon vos envies et à petit prix.</p>
+      <div class="recetteFont">
+        <h1>Le Dry Martini</h1>
+
+        <div class="presentation">
+          <div class="photoCocktail">
+            <img
+              class="photo"
+              src="../Image/drymartini.jpg"
+              width="200"
+              height="200"
+              alt="dry martini"
+            />
+          </div>
+          <div class="descriptif">
+            <h2>Dry out your troat !</h2>
+            <p>
+              Originaire des Etas-Unis où il fut crée en 1863, un cocktail
+              emblématique pour les palets à la recherche de fraicheur !
+            </p>
+          </div>
         </div>
 
-         <div class="abdou">
-            <img  class="photoAbdou" src="Image/abdou.png" alt="abdou" width="200"/>
-          <div class="descriptionAbdou"> 
-            <h2>Qui suis-je ?</h2>
-            <p> Mon nom est Abdou Kerkeb, je suis mixologue qualifié en tant que meilleur ouvrier de France. En 2018, j'ai gagné le Golden Shaker.</p>
-            <p> Depuis plusieurs années, je souhaite démocratiser la consommation des cocktails en France. C'est pour cela que j'ai eu l'idée de ce site afin de partager avec vous ma passion.</p>
-          </div>   
-         </div>
-      </section>   
+        <article class="ingredientCocktail">
+          <section class="listeIngredients">
+            <h2>Ingrédients :</h2>
+            <ul>
+              <li>Vodka : 5 cl</li>
+              <li>Martini extra : 3 cl</li>
+            </ul>
+          </section>
+        </article>
 
+        <div class="preparation">
+          <p>À mélanger au shaker, verser dans un verre.</p>
+          <p><strong>Enjoy !</strong></p>
+        </div>
+      </div>
       <footer>
         <div class="contenu-footer">
           <div class="telechargement">
@@ -62,9 +78,9 @@
               <h3>Télécharge l'Appli</h3>
             </div>
             <div class="imgstore">
-              <a href="#"><img src="Image/appStore.png" alt="" /></a>
+              <a href="#"><img src="../Image/appStore.png" alt="" /></a>
 
-              <a href="#"><img src="Image/playstore.png" alt="" /></a>
+              <a href="#"><img src="../Image/playstore.png" alt="" /></a>
             </div>
           </div>
 
@@ -80,28 +96,28 @@
               <li class="media">
                 <a href="#"
                   ><img
-                    src="images réseaux/twitter.png"
+                    src="../images réseaux/twitter.png"
                     alt="icones réseaux sociaux"
                 /></a>
               </li>
               <li class="media">
                 <a href="#"
                   ><img
-                    src="images réseaux/isntagram.jpeg"
+                    src="../images réseaux/isntagram.jpeg"
                     alt="icones réseaux sociaux"
                 /></a>
               </li>
               <li class="media">
                 <a href="#"
                   ><img
-                    src="images réseaux/facebook.png"
+                    src="../images réseaux/facebook.png"
                     alt="icones réseaux sociaux"
                 /></a>
               </li>
               <li class="media">
                 <a href="#"
                   ><img
-                    src="images réseaux/YouTube.png"
+                    src="../images réseaux/YouTube.png"
                     alt="icones réseaux sociaux"
                 /></a>
               </li>
@@ -128,6 +144,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/swipe-menu.js" async></script>
+    <script src="../js/swipe-menu.js" async></script>
   </body>
 </html>
