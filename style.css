@@ -293,6 +293,7 @@ body {
 .about-text {
   justify-content: center;
   text-align: center;
+  font-family: "Lato";
 }
 
 .abdou {
@@ -317,10 +318,14 @@ body {
   flex-wrap: wrap;
   padding: 20px 0 0 50px;
   color: white;
+  font-family: "Lato";
 }
 
 .descriptionAbdou h2 {
   font-size: 25px;
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: grey 1px 1px 0px;
 }
 
 /* PAGE TUTORIEL */
@@ -348,7 +353,6 @@ body {
   padding-left: 30px;
 }
 .materiel {
-  border: 1px white solid;
   height: 20%;
 }
 .elementsMateriel {
@@ -356,33 +360,42 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   height: 80%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 .materielCard {
-  width: 300px;
-  border: 1px solid white;
+  width: 250px;
+  border: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+  border-radius: 20px;
   margin: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  
 }
 .materielCard h3 {
   text-align: center;
   font-family: "black_jackregular";
   font-size: 150%;
+  margin-bottom: -10px;
 }
 .materielCard p {
   text-align: center;
   font-family: "Lato";
+  padding-bottom: 10px;
 }
 .imgShaker,
 .imgSpoon,
 .imgJigger,
 .imgStrainer,
 .imgFineStrainer {
-  width: 100px;
-  height: 100px;
-  background-color: grey;
+  width: 250px;
+  height: 250px;
+  background-image: url(Images/pilon.jpg);
   align-self: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: -45px;
 }
 
 /* Footer */
@@ -853,6 +866,7 @@ a {
   .cocktailFavori {
     display: none;
   }
+  
   /* footer media 600 */
   .mention,
   .politique,
