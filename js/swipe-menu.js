@@ -1,6 +1,6 @@
 // Récupération des blocs
-let mainMenu = document.querySelector("#menu");
-let burgerMenu = document.querySelector("#menu-burger");
+const mainMenu = document.querySelector("#menu");
+const burgerMenu = document.querySelector("#menu-burger");
 
 // Detect all clicks on the document
 document.addEventListener("click", function(event) {
@@ -90,9 +90,9 @@ if (screen.width <= 1024) {
 
       // Détection de la direction
       if (between > 0) {
-        let orientation = "ltr";
+        var orientation = "ltr";
       } else {
-        let orientation = "rtl";
+        var orientation = "rtl";
       }
 
       // Modification du menu burger
