@@ -340,7 +340,8 @@ body {
   border-top: 1px solid #834f1e;
   box-shadow: inset 0px 3px 5px -3px #834f1e;
 }
-.titreMateriel {
+.titreMateriel,
+.titreTuto {
   text-align: left;
   font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -352,15 +353,34 @@ body {
   padding-top: 20px;
   padding-left: 30px;
 }
-.materiel {
-  height: 20%;
+
+
+.materiel,
+.tutoriel {
+  height: 100%;
 }
-.elementsMateriel {
+.tutoriel {
+  margin-top: 40px;
+
+}
+.elementsMateriel,
+.elementTuto1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 80%;
-  /* border: 1px solid white; */
+
+}
+.elementTuto2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+}
+.elementTuto1 {
+  flex-direction: column;
+  align-items: center;
+}
+
 }
 .materielCard {
   width: 250px;
@@ -373,11 +393,30 @@ body {
   flex-direction: column;
   
 }
-.materielCard h3 {
+.materielCard h3,
+.tutoCardMateriel h3,
+.tutoCardIngredient h3 {
   text-align: center;
   font-family: "black_jackregular";
   font-size: 150%;
   margin-bottom: -10px;
+}
+.tutoCardMateriel h3 {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #834f1e;
+}
+.tutoCardIngredient {
+  margin: 30px;
+  width: 330px;
+  height: 360px;
+  border: 1px solid #834f1e;
+  border-radius: 20px;
+  overflow: auto;
+}
+.tutoCardIngredient li {
+  list-style: none;
+  padding-top: 5px;
 }
 .materielCard p {
   text-align: center;
@@ -397,7 +436,12 @@ body {
   border-bottom-right-radius: 20px;
   margin-bottom: -45px;
 }
-
+.video {
+  border-radius: 20px;
+}
+.video:hover {
+  box-shadow: #834f1e 0px 0px 5px;
+}
 /* Footer */
 
 .contenu-footer {
