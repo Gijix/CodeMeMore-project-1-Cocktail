@@ -1,12 +1,22 @@
 // Récupération des blocs
-var mainMenu = document.querySelector("#menu");
-var burgerMenu = document.querySelector("#menu-burger");
+const mainMenu = document.querySelector("#menu");
+const burgerMenu = document.querySelector("#menu-burger");
+
+// Detect all clicks on the document
+document.addEventListener("click", function(event) {
+  // If user clicks inside the element, do nothing
+	if (event.target.closest("#menu") || event.target.closest("#menu-burger")) return;
+	// If user clicks outside the element, hide it!
+  mainMenu.classList.add("invisible");
+  // and return the burger icon to  unclicked
+  burgerMenu.removeAttribute("class", "clicked");
+  });
 
 /*===============================*/
 /*=== Clic sur le menu burger ===*/
 /*===============================*/
 // Vérifie si l'événement touchstart existe et est le premier déclenché
-var clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
+let clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
 window.addEventListener(
   "touchstart",
   function detectTouch() {
@@ -27,7 +37,7 @@ burgerMenu.addEventListener(
     } else {
       this.removeAttribute("class");
     }
-    // Variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
+    // variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
     // burgerMenu.classList.toggle("clicked");
 
     // Créé l'effet pour le menu slide (compatible partout)
@@ -45,15 +55,15 @@ burgerMenu.addEventListener(
 /*===============================*/
 // Si l'écran est plus petit que "x" pixels (optionnel) // 1024px ici
 if (screen.width <= 1024) {
-  var startX = 0; // Position de départ
-  var distance = 100; // 100 px de swipe pour afficher le menu
+  let startX = 0; // Position de départ
+  let distance = 100; // 100 px de swipe pour afficher le menu
 
   // Au premier point de contact
   window.addEventListener(
     "touchstart",
     function (evt) {
       // Récupère les "touches" effectuées
-      var touches = evt.changedTouches[0];
+      let touches = evt.changedTouches[0];
       startX = touches.pageX;
       between = 0;
     },
@@ -75,8 +85,8 @@ if (screen.width <= 1024) {
   window.addEventListener(
     "touchend",
     function (evt) {
-      var touches = evt.changedTouches[0];
-      var between = touches.pageX - startX;
+      let touches = evt.changedTouches[0];
+      let between = touches.pageX - startX;
 
       // Détection de la direction
       if (between > 0) {
