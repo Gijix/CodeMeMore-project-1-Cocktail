@@ -37,12 +37,10 @@
       <article id="choix">
         <section class="choisir">
           <form>
-            <label for="ingredient1 ingredient2 ingredient3"
-              >What's your poison ?</label
-            >
+            <label for="ingredient1 ingredient2 ingredient3">What's your poison ?</label>
 
             <select name="ingredient1" id="ingredient1">
-              <option value="">Premier ingrédient</option>
+              <option value="1">Premier ingrédient</option>
               <optgroup label="Alcool Blanc">
                 <option value="vodka">Vodka</option>
                 <option value="tequila">Tequila</option>
@@ -64,7 +62,7 @@
               </optgroup>
             </select>
             <select name="ingredient2" id="ingredient2">
-              <option value="">Deuxième ingrédient</option>
+              <option value="2">Deuxième ingrédient</option>
               <optgroup label="Alcool Blanc">
                 <option value="vodka">Vodka</option>
                 <option value="tequila">Tequila</option>
@@ -92,6 +90,7 @@
               id="recherche"
             />
           </form>
+          <p id="empty" style='display: none'>Plus rien dans le frigo?! Faites vos courses !</p>
         </section>
       </article>
       <article class="cards"></article>

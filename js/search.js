@@ -161,19 +161,25 @@ function createCard(title, image, adress) {
 const search = document.querySelector("#recherche");
 
 search.addEventListener("click", function () {
-  const search1 = document.querySelector("#ingredient1").value;
-  const search2 = document.querySelector("#ingredient2").value;
-  cards.innerHTML = "";
-  for (let i = 0; i < cocktailsToAdopt.length; i++) {
-    if (
-      cocktailsToAdopt[i].ingredients.includes(search1) &&
-      cocktailsToAdopt[i].ingredients.includes(search2)
-    ) {
-      createCard(
-        cocktailsToAdopt[i].name,
-        cocktailsToAdopt[i].picture,
-        cocktailsToAdopt[i].url
-      );
-    }
-  }
+  const search1 = document.querySelector('#ingredient1').value;
+  const search2 = document.querySelector('#ingredient2').value;
+  cards.innerHTML = '';
+  if(search1 === "1" && search2 === "2"){
+    document.querySelector('#empty').removeAttribute('style');
+  } else if(search1 === "1") {
+    document.querySelector('#empty').setAttribute('style', "display: none");
+    for (let i = 0; i < cocktailsToAdopt.length; i++) {
+    if (cocktailsToAdopt[i].ingredients.includes(search2)) {
+      createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
+    }}} else if(search2 === "2") {
+      document.querySelector('#empty').setAttribute('style', "display: none");
+      for (let i = 0; i < cocktailsToAdopt.length; i++) {
+      if (cocktailsToAdopt[i].ingredients.includes(search1)) {
+        createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
+      }}} else {
+        document.querySelector('#empty').setAttribute('style', "display: none");
+        for (let i = 0; i < cocktailsToAdopt.length; i++) {
+        if (cocktailsToAdopt[i].ingredients.includes(search1) && cocktailsToAdopt[i].ingredients.includes(search2)) {
+          createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
+        }}}
 });
