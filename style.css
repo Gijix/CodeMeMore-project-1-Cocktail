@@ -371,20 +371,21 @@ body {
 }
 .elementTuto2 {
   display: flex;
-  flex-wrap: wrap;
   height: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .elementTuto1 {
   flex-direction: column;
   align-items: center;
 }
 .materielCard {
-  width: 300px;
+  width: 250px;
   height: 350px;
   border: 1px solid #834f1e;
   box-shadow: inset 0px 3px 5px -3px #834f1e;
   border-radius: 20px;
-  margin: 30px 20px 30px 20px;
+  margin: 30px 40px 30px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -428,11 +429,25 @@ body {
 .imgFineStrainer {
   width: 100%;
   height: 250px;
-  background-image: url(Images/pilon.jpg);
   align-self: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-bottom: -45px;
+}
+.imgShaker {
+  background-image: url(Image/imgShaker.jpg);
+  background-attachment: local;
+}
+.imgSpoon {
+  background-image: url(Image/imgSpoon.jpg);
+}
+.imgJigger {
+  background-image: url(Image/imgJigger.jpg);
+}
+.imgStrainer {
+  background-image: url(Image/imgStrainer.jpg);
+}
+.imgFineStrainer {
+  background-image: url(Image/imgFineStrainer.jpg);
 }
 .video {
   border-radius: 20px;
