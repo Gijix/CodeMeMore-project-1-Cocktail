@@ -1,6 +1,6 @@
 // Récupération des blocs
-var mainMenu = document.querySelector("#menu");
-var burgerMenu = document.querySelector("#menu-burger");
+let mainMenu = document.querySelector("#menu");
+let burgerMenu = document.querySelector("#menu-burger");
 
 // Detect all clicks on the document
 document.addEventListener("click", function(event) {
@@ -16,7 +16,7 @@ document.addEventListener("click", function(event) {
 /*=== Clic sur le menu burger ===*/
 /*===============================*/
 // Vérifie si l'événement touchstart existe et est le premier déclenché
-var clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
+let clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
 window.addEventListener(
   "touchstart",
   function detectTouch() {
@@ -37,7 +37,7 @@ burgerMenu.addEventListener(
     } else {
       this.removeAttribute("class");
     }
-    // Variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
+    // variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
     // burgerMenu.classList.toggle("clicked");
 
     // Créé l'effet pour le menu slide (compatible partout)
@@ -55,15 +55,15 @@ burgerMenu.addEventListener(
 /*===============================*/
 // Si l'écran est plus petit que "x" pixels (optionnel) // 1024px ici
 if (screen.width <= 1024) {
-  var startX = 0; // Position de départ
-  var distance = 100; // 100 px de swipe pour afficher le menu
+  let startX = 0; // Position de départ
+  let distance = 100; // 100 px de swipe pour afficher le menu
 
   // Au premier point de contact
   window.addEventListener(
     "touchstart",
     function (evt) {
       // Récupère les "touches" effectuées
-      var touches = evt.changedTouches[0];
+      let touches = evt.changedTouches[0];
       startX = touches.pageX;
       between = 0;
     },
@@ -85,14 +85,14 @@ if (screen.width <= 1024) {
   window.addEventListener(
     "touchend",
     function (evt) {
-      var touches = evt.changedTouches[0];
-      var between = touches.pageX - startX;
+      let touches = evt.changedTouches[0];
+      let between = touches.pageX - startX;
 
       // Détection de la direction
       if (between > 0) {
-        var orientation = "ltr";
+        let orientation = "ltr";
       } else {
-        var orientation = "rtl";
+        let orientation = "rtl";
       }
 
       // Modification du menu burger
