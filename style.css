@@ -77,13 +77,51 @@
 .mentions {
   padding: 150px 40px;
 }
+/* Page formulaire */
 
-#formulaire {
-  padding: 10%;
+.titreFormulaire{
+  width: 400px;
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  font-family: arial;
+}
+.formulaire label{
+  margin-top: 20px; 
+  margin-bottom:5px;
+}
+.formulaire textarea{
+  border-radius:5px;
 }
 input {
   margin: 5px 0px;
+  border-radius:5px; 
 }
+
+#envoyerFormulaire{
+  margin-top:10px;
+}
+
+#envoyerFormulaire:hover{
+ background-color: rgb(216, 43, 193);
+ cursor: pointer;
+ color: white;
+}
+
+.formulaire input value {
+  text-decoration: white;
+ }
 
 /* Modification Principale */
 * {
@@ -125,6 +163,9 @@ body {
   position: relative;
   display: flex;
   overflow: hidden;
+  -webkit-box-shadow: 0 8px 6px -6px  rgb(216, 43, 193);
+	   -moz-box-shadow: 0 8px 6px -6px  rgb(216, 43, 193);
+	        box-shadow: 0 8px 6px -6px  rgb(216, 43, 193);
 }
 .identite {
   display: flex;
@@ -293,6 +334,7 @@ body {
 .about-text {
   justify-content: center;
   text-align: center;
+  font-family: arial;
 }
 
 .abdou {
@@ -324,50 +366,94 @@ body {
 }
 /* Footer */
 
+footer{
+  border-top: 0.1px solid rgb(108, 117, 125);
+  margin-top: 30px;
+}
+.abus{
+  font-family:arial; 
+  text-align: center;
+  font-size: 13px;
+}
+#infoService{
+  color: rgb(173, 181, 189);
+}
+#infoService:hover{
+  text-decoration:underline
+}
 .contenu-footer {
   display: flex;
   justify-content: space-around;
   height: 100px;
   width: 65vw;
+  font-family: arial;
 }
 .contenu-footer li {
   list-style: none;
 }
 .contenu-footer a {
   text-decoration: none;
-  color: white;
-}
-.reseaux {
-  text-align: center;
-}
-.copyright {
-  display: flex;
-  justify-content: space-around;
-}
-.copyright a {
-  text-decoration: none;
-  color: white;
-}
-.listeMedia img {
-  width: 20px;
-  border-radius: 5px;
+  color: lightgrey;;
 }
 
 .telechargement {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  justify-content: center;
+}
+
+.imgstore {
+  width: 80%;
+  display:flex;
+  flex-direction: row;
 }
 .titreTelechargement {
-  padding: 0px;
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
 }
 .telechargement img {
-  width: 30%;
-  margin-top: -10px;
+  margin-top: 10px;
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+.titre-contact{
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
+}
+.contact-list{
+  font-size:12px;
+  margin:3px;
+  text-decoration: none;
+  color:lightgrey;
+}
+#formulairecontact:hover{
+  text-decoration:underline white;
+}
+.reseaux {
+  text-align: center;
+}
+.suis-nous{
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
+}
+
+.listeMedia img {
+  width: 30px;
+  border-radius: 5px;
 }
 .media {
   list-style: none;
-  padding: 5px;
+  padding-right: 5px;
   margin: 5px;
 }
 
@@ -376,15 +462,25 @@ body {
   flex-direction: row;
   justify-content: flex-start;
 }
-.contact {
+
+.copyright {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  font-size:13px;
+  font-family: arial;
+  color: lightgrey;
+  padding: 15px;
 }
-footer {
-  margin-top: 30px;
+.copyright a {
+  text-decoration: none;
+  color: lightgrey;
 }
+.copyright a:hover {
+  text-decoration: none;
+  color: lightgrey;
+  text-decoration: underline white; 
+}
+
 /* Template Recette  */
 .recetteFont {
   color: #834f1e;
@@ -399,8 +495,8 @@ footer {
   color: white;
   margin-top: 10px;
   padding-top: 20px;
-  border-top: 1px solid #834f1e;
-  box-shadow: inset 0px 3px 5px -3px #834f1e;
+  /* border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e; */
 }
 
 .descriptif h2,
@@ -413,6 +509,7 @@ footer {
   justify-content: space-around;
   padding: 50px 50px 20px 20px;
   flex-wrap: wrap;
+  font-family: arial;
 }
 .photoCocktail {
   min-width: 210px;
@@ -439,6 +536,7 @@ footer {
   border-radius: 20px;
   box-shadow: 0 0 10px rgb(131, 79, 30);
   background-color: white;
+  font-family: arial;
 }
 
 .ingredientCocktail {
@@ -483,6 +581,16 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(128, 55, 88);
 }
+.cardCocktail::-webkit-scrollbar{
+  height:10px; 
+  border-radius: 30px;
+  background: transparent;
+}
+:hover::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background: rgb(131, 79, 30);
+  padding-top: 15px;
+}
 
 .cardCocktail a {
   text-decoration: none;
@@ -513,8 +621,8 @@ a {
   text-shadow: 4px 4px 8px rgba(128, 55, 88, 0.966);
   margin-top: 10px;
   padding-top: 20px;
-  border-top: 1px solid #834f1e;
-  box-shadow: inset 0px 3px 5px -3px #834f1e;
+  /* border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e; */
 }
 .recettesPolice {
   color: white;
