@@ -120,11 +120,9 @@ body {
 /* Header */
 #header {
   width: 100%;
-  line-height: 16em;
   text-align: center;
   position: relative;
   display: flex;
-  overflow: hidden;
 }
 .identite {
   display: flex;
@@ -133,7 +131,8 @@ body {
   width: 100%;
   justify-content: space-around;
 }
-.titre {
+.titre,
+.titreIndex {
   height: 50px;
   width: 70%;
   text-shadow: rgb(216, 43, 193) 4px 4px 4px;
@@ -141,7 +140,9 @@ body {
   font-family: "digory_doodlesregular", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-
+.titre {
+  overflow: hidden;
+}
 .titre a {
   color: white;
   text-decoration: none;
@@ -354,14 +355,12 @@ body {
   padding-left: 30px;
 }
 
-
 .materiel,
 .tutoriel {
   height: 100%;
 }
 .tutoriel {
   margin-top: 40px;
-
 }
 .elementsMateriel,
 .elementTuto1 {
@@ -369,7 +368,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   height: 80%;
-
 }
 .elementTuto2 {
   display: flex;
@@ -380,18 +378,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-}
 .materielCard {
-  width: 250px;
+  width: 300px;
+  height: 350px;
   border: 1px solid #834f1e;
   box-shadow: inset 0px 3px 5px -3px #834f1e;
   border-radius: 20px;
-  margin: 20px;
-  margin-bottom: 30px;
+  margin: 30px 20px 30px 20px;
   display: flex;
   flex-direction: column;
-  
+  justify-content: space-between;
 }
 .materielCard h3,
 .tutoCardMateriel h3,
@@ -399,6 +395,8 @@ body {
   text-align: center;
   font-family: "black_jackregular";
   font-size: 150%;
+}
+.materielCard h3 {
   margin-bottom: -10px;
 }
 .tutoCardMateriel h3 {
@@ -428,7 +426,7 @@ body {
 .imgJigger,
 .imgStrainer,
 .imgFineStrainer {
-  width: 250px;
+  width: 100%;
   height: 250px;
   background-image: url(Images/pilon.jpg);
   align-self: center;
@@ -910,7 +908,7 @@ a {
   .cocktailFavori {
     display: none;
   }
-  
+
   /* footer media 600 */
   .mention,
   .politique,
