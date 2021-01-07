@@ -123,7 +123,7 @@ const cocktailsToAdopt = [
   },
   {
     name: "Cosmopolitan",
-    picture: "../Images/cosmopolitan.jpg",
+    picture: "../Image/cosmopolitan.jpg",
     url: "cosmopolitan.html",
     ingredients: "vodka triple sec cranberrie citron vert"
   }
