@@ -79,6 +79,8 @@
 }
 
 #formulaire {
+  display: flex;
+  flex-direction: column;
   padding: 10%;
 }
 input {
@@ -529,6 +531,7 @@ body {
   align-items: center;
 }
 footer {
+  text-align: center;
   margin-top: 30px;
 }
 /* Template Recette  */
