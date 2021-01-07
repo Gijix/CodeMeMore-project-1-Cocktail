@@ -84,10 +84,14 @@
 input {
   margin: 5px 0px;
 }
-
+.abus {
+  font-family: arial;
+  text-align: center;
+  font-size: 13px;
+}
 /* Modification Principale */
 * {
-  font-size: 1em;
+  /* font-size: 1em; */
   box-sizing: border-box;
 }
 a {
@@ -136,19 +140,20 @@ body {
   height: 50px;
   width: 70%;
   text-shadow: rgb(216, 43, 193) 4px 4px 4px;
-  font-size: 150%;
   font-family: "digory_doodlesregular", Arial, Helvetica, sans-serif;
   text-align: start;
 }
 .titre {
   overflow: hidden;
+  font-size: 150%;
 }
 .titre a {
   color: white;
   text-decoration: none;
 }
 .titreIndex {
-  
+  font-size: 120%;
+  flex-wrap: nowrap;
 }
 #logosite {
   width: 100%;
@@ -505,6 +510,11 @@ body {
   list-style: none;
   padding: 5px;
   margin: 5px;
+}
+.abus {
+  font-family: arial;
+  text-align: center;
+  font-size: 13px;
 }
 
 .listeMedia {
@@ -892,7 +902,8 @@ a {
     width: 100vw;
   }
   /* header media 600 */
-  .titre {
+  .titre,
+  .titreIndex {
     width: 100%;
     font-size: 90%;
     text-align: center;

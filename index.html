@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <title>Accueil - Shake it Yourself</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <nav id="menu">
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="recettes.html">Recettes</a></li>
-        <li><a href="tutoriel.html">Tuto / Matériel</a></li>
-        <li><a href="hotToddie.html">Recette de saison</a></li>
-        <li><a href="about.html">A propos</a></li>
+        <li><a href="html/recettes.html">Recettes</a></li>
+        <li><a href="html/tutoriel.html">Tuto / Matériel</a></li>
+        <li><a href="html/hotToddie.html">Recette de saison</a></li>
+        <li><a href="html/about.html">A propos</a></li>
       </ul>
     </nav>
     <div class="container">
@@ -26,7 +26,7 @@
         <div class="identite">
           <h1 class="titreIndex"><a href="index.html">Shake it Yourself</a></h1>
           <div class="logo">
-            <img src="../Image/logo.jpg" alt="logo site" id="logosite" />
+            <img src="Image/logo.jpg" alt="logo site" id="logosite" />
           </div>
         </div>
       </header>
@@ -80,61 +80,91 @@
               </optgroup>
             </select>
 
-            <input
-              type="button"
-              value="Découvrir"
-              id="recherche"
-            />
+            <input type="button" value="Découvrir" id="recherche" />
           </form>
-          <p id="empty" style='display: none'>Plus rien dans le frigo?! Faites vos courses !</p>
+          <p id="empty" style="display: none">
+            Plus rien dans le frigo?! Faites vos courses !
+          </p>
         </section>
       </article>
       <article class="cards"></article>
       <article id="proposition">
         <section class="cocktailMois">
-          <h1><a href="hotToddie.html">Cocktail Du Mois</a></h1>
-          <div class="imgCocktailMois"><img src= "../Image/hotToddie.jpg" alt="image cocktail Hot Toddie" width="400" height="350"></div>
+          <h1><a href="html/hotToddie.html">Cocktail Du Mois</a></h1>
+          <div class="imgCocktailMois">
+            <img
+              src="Image/hotToddie.jpg"
+              alt="image cocktail Hot Toddie"
+              width="400"
+              height="350"
+            />
+          </div>
         </section>
         <section class="cocktailFavori">
           <h1><a href="manhattan.html">Cocktail Favori</a></h1>
-          <div class="imgCocktailFavori"><img src="../Image/manhattan.jpg" alt="image cocktail manhattan" width="400" height="350"></div>
+          <div class="imgCocktailFavori">
+            <img
+              src="Image/manhattan.jpg"
+              alt="image cocktail manhattan"
+              width="400"
+              height="350"
+            />
+          </div>
         </section>
       </article>
       <footer>
-        <p class='abus'>L'abus d'alcool est dangereux pour la santé. <a id='infoService' href='https://www.alcool-info-service.fr/'>www.alcool-info-service.fr</a></p>
+        <p class="abus">
+          L'abus d'alcool est dangereux pour la santé.
+          <a id="infoService" href="https://www.alcool-info-service.fr/"
+            >www.alcool-info-service.fr</a
+          >
+        </p>
         <div class="contenu-footer">
-         
           <div class="telechargement">
-              <p class='titreTelechargement'>TÉLÉCHARGEZ L'APPLI</p>
+            <p class="titreTelechargement">TÉLÉCHARGEZ L'APPLI</p>
             <div class="imgstore">
-              <div class='appstore'><a href="#"><img src="../Image/appStore.png" alt="" /></a></div>
-              <div class='googleplay'><a href="#"><img src="../Image/playstore.png" alt="" /></a></div>
+              <div class="appstore">
+                <a href="#"><img src="Image/appStore.png" alt="" /></a>
+              </div>
+              <div class="googleplay">
+                <a href="#"><img src="Image/playstore.png" alt="" /></a>
+              </div>
             </div>
           </div>
 
           <div class="contact">
             <ul class="liste-contact">
-              <li class='titre-contact'>CONTACTEZ NOUS</li>
-              <li class="contact-list" id='formulairecontact'><a href="formulaire.html">Formulaire de contact</a></li>
+              <li class="titre-contact">CONTACTEZ NOUS</li>
+              <li class="contact-list" id="formulairecontact">
+                <a href="formulaire.html">Formulaire de contact</a>
+              </li>
               <li class="contact-list">9 rue du code, San Francisco</li>
               <li class="contact-list">contact@shakeityourself.com</li>
             </ul>
           </div>
 
           <div class="reseaux">
-            <p class='suis-nous'>SUIVEZ NOUS</p>
+            <p class="suis-nous">SUIVEZ NOUS</p>
             <ul class="listeMedia">
               <li class="media">
-                <a href="#"><img src="../Image/twitter.png" alt="icones réseaux sociaux"/></a>
+                <a href="#"
+                  ><img src="Image/twitter.png" alt="icones réseaux sociaux"
+                /></a>
               </li>
               <li class="media">
-                <a href="#"><img src="../Image/isntagram.jpeg" alt="icones réseaux sociaux"/></a>
+                <a href="#"
+                  ><img src="Image/isntagram.jpeg" alt="icones réseaux sociaux"
+                /></a>
               </li>
               <li class="media">
-                <a href="#"><img src="../Image/facebook.png" alt="icones réseaux sociaux"/></a>
+                <a href="#"
+                  ><img src="Image/facebook.png" alt="icones réseaux sociaux"
+                /></a>
               </li>
               <li class="media">
-                <a href="#"><img src="../Image/YouTube.png" alt="icones réseaux sociaux"/></a>
+                <a href="#"
+                  ><img src="Image/YouTube.png" alt="icones réseaux sociaux"
+                /></a>
               </li>
             </ul>
           </div>
@@ -153,11 +183,13 @@
           </p>
           <p class="politique">
             <a href="politique_de_confidentialite.html"
-              >Politique de confidentialité</a>
+              >Politique de confidentialité</a
+            >
           </p>
         </div>
       </footer>
     </div>
-    <script src="../js/swipe-menu.js" async></script>
+    <script src="js/search.js"></script>
+    <script src="js/swipe-menu.js" async></script>
   </body>
 </html>
