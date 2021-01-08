@@ -482,95 +482,57 @@ body {
   box-shadow: #834f1e 0px 0px 5px;
 }
 /* Footer */
-footer{
-  border-top: 0.1px solid rgb(108, 117, 125);
-  margin-top: 30px;
-}
-.abus{
-  font-family:arial; 
-  text-align: center;
-  font-size: 13px;
-}
-#infoService{
-  color: rgb(173, 181, 189);
-}
-#infoService:hover{
-  text-decoration:underline
-}
+
 .contenu-footer {
   display: flex;
   justify-content: space-around;
   height: 100px;
   width: 65vw;
-  font-family: arial;
 }
 .contenu-footer li {
   list-style: none;
 }
 .contenu-footer a {
   text-decoration: none;
-  color: lightgrey;;
+  color: white;
+}
+.reseaux {
+  text-align: center;
+}
+.copyright {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+.listeMedia img {
+  width: 20px;
+  border-radius: 5px;
 }
 
 .telechargement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.imgstore {
-  width: 80%;
-  display:flex;
-  flex-direction: row;
+  width: 30%;
 }
 .titreTelechargement {
-  margin-bottom:13px;
-  margin-top:13px;
-  font-size:13px;
+  padding: 0px;
 }
 .telechargement img {
-  margin-top: 10px;
-  width: 100px;
-  height: 32px;
-  border-radius: 5px;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: flex-start; */
-}
-.titre-contact{
-  margin-bottom:13px;
-  margin-top:13px;
-  font-size:13px;
-}
-.contact-list{
-  font-size:12px;
-  margin:3px;
-  text-decoration: none;
-  color:lightgrey;
-}
-#formulairecontact:hover{
-  text-decoration:underline white;
-}
-.reseaux {
-  text-align: center;
-}
-.suis-nous{
-  margin-bottom:13px;
-  margin-top:13px;
-  font-size:13px;
-}
-
-.listeMedia img {
-  width: 30px;
-  border-radius: 5px;
+  width: 30%;
+  margin-top: -10px;
 }
 .media {
   list-style: none;
-  padding-right: 5px;
+  padding: 5px;
   margin: 5px;
+}
+.abus {
+  font-family: arial;
+  text-align: center;
+  font-size: 13px;
 }
 
 .listeMedia {
@@ -578,23 +540,80 @@ footer{
   flex-direction: row;
   justify-content: flex-start;
 }
-
-.copyright {
+.contact {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+/* Template Recette  */
+.recetteFont {
+  color: #834f1e;
+  font-family: "Lato";
+}
+
+.recetteFont h1 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+}
+
+.descriptif h2,
+.listeIngredients h2 {
+  font-size: 25px;
+}
+.presentation {
+  display: flex;
+  /* flex-direction: row; */
   justify-content: space-around;
-  font-size:13px;
-  font-family: arial;
-  color: lightgrey;
-  padding: 15px;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
 }
-.copyright a {
-  text-decoration: none;
-  color: lightgrey;
+.photoCocktail {
+  min-width: 210px;
+  width: 30%;
 }
-.copyright a:hover {
-  text-decoration: none;
-  color: lightgrey;
-  text-decoration: underline white; 
+.photo {
+  border-radius: 100%;
+  box-shadow: 0 0 10px white;
+}
+
+.descriptif {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 50px;
+  color: white;
+}
+
+.listeIngredients {
+  padding-left: 20px;
+  color: #9a16ac;
+  width: 100%;
+  border: 1px solid rgb(131, 79, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(131, 79, 30);
+  background-color: white;
+}
+
+.ingredientCocktail {
+  display: flex;
+  margin: 50px 50px 20px 50px;
+}
+
+.preparation {
+  text-align: center;
+  margin-bottom: 100px;
 }
 /* PAGE NOS RECETTES */
 .titreNosRecettes {
