@@ -425,7 +425,7 @@ body {
 .tutoCardIngredient {
   margin: 30px;
   width: 330px;
-  height: 360px;
+  height: 420px;
   border: 1px solid #834f1e;
   border-radius: 20px;
   overflow: auto;
@@ -483,6 +483,7 @@ body {
 }
 /* Footer */
 footer{
+  text-align: center;
   border-top: 0.1px solid rgb(108, 117, 125);
   margin-top: 30px;
 }
