@@ -4,127 +4,127 @@ const cocktailsToAdopt = [
   {
     name: "Gin Fizz",
     picture: "Image/ginfizz.jpg",
-    url: "ginFizz.html",
+    url: "html/ginFizz.html",
     ingredients: " gin citron sucre de canne eau gazeuse"
   },
   {
     name: "Aperol Spritz",
     picture: "Image/aperolSpritz.jpg",
-    url: "aperolSpritz.html",
+    url: "html/aperolSpritz.html",
     ingredients: "aperol prosecco soda"
   },
   {
     name: "Kir Royal",
     picture: "Image/kirRoyal.jpg",
-    url: "kirRoyal.html",
+    url: "html/kirRoyal.html",
     ingredients: "crème de cassis champagne"
   },
   {
     name: "Manhattan",
     picture: "Image/manhattan.jpg",
-    url: "manhattan.html",
+    url: "html/manhattan.html",
     ingredients: "whisky martini rouge angostrura bitter"
   },
   {
     name: "Gimlet",
     picture: "Image/gimlet.jpg",
-    url: "gimlet.html",
+    url: "html/gimlet.html",
     ingredients: "gin citron jaune sirop sucre"
   },
   {
     name: "Piña colada",
     picture: "Image/pinaColada.jpg",
-    url: "pinaColada.html",
+    url: "html/pinaColada.html",
     ingredients: "rhum ananas crème coco"
   },
   {
     name: "Hot Toddie",
     picture: "Image/hotToddie.jpg",
-    url: "hotToddie.html",
+    url: "html/hotToddie.html",
     ingredients: "whisky citron jaune cannelle eau chaude noix de muscade miel"
   },
   {
     name: "Vodka Sour",
     picture: "Image/vodkaSour.jpg",
-    url: "vodkaSour.html",
+    url: "html/vodkaSour.html",
     ingredients: "vodka citron jaune sirop sucre angostrura bitter œuf"
   },
   {
     name: "God Father",
     picture: "Image/godFather.jpg",
-    url: "godFather.html",
+    url: "html/godFather.html",
     ingredients: "whisky amaretto"
   },
   {
     name: "Negroni",
     picture: "Image/negroni.jpg",
-    url: "negroni.html",
+    url: "html/negroni.html",
     ingredients: "gin campari martini rouge"
   },
   {
     name: "Old Fashioned",
     picture: "Image/oldFashioned.jpg",
-    url: "oldFashioned.html",
+    url: "html/oldFashioned.html",
     ingredients: "whisky angostrura bitter sirop sucre"
   },
   {
     name: "Margarita",
     picture: "Image/margarita.jpg",
-    url: "margarita.html",
+    url: "html/margarita.html",
     ingredients: "tequila citron cointreau sirop sucre"
   },
   {
     name: "Mai Tai",
     picture: "Image/maiTai.jpg",
-    url: "maiTai.html",
+    url: "html/maiTai.html",
     ingredients: " rhum orgeat citron falernum angostrura bitter"
   },
   {
     name: "French Martini",
     picture: "Image/frenchmartini.jpg",
-    url: "frenchMartini.html",
+    url: "html/frenchMartini.html",
     ingredients: "vodka chambord ananas"
   },
   {
     name: "Dry Martini",
     picture: "Image/drymartini.jpg",
-    url: "dryMartini.html",
+    url: "html/dryMartini.html",
     ingredients: "vodka martini extra dry noilly prat"
   },
   {
     name: "Naked And Famous",
     picture: "Image/nakednfamous.jpg",
-    url: "nakedNFamous.html",
+    url: "html/nakedNFamous.html",
     ingredients: "mescal chartreuse jaune aperol citron"
   },
   {
     name: "Toreador",
     picture: "Image/toreador.jpg",
-    url: "toreador.html",
+    url: "html/toreador.html",
     ingredients: "tequila liqueur abricot peychaud's bitter"
   },
   {
     name: "Paloma",
     picture: "Image/paloma.jpg",
-    url: "paloma.html",
+    url: "html/paloma.html",
     ingredients: "tequila pamplemousse sirop sucre eau gazeuse"
   },
   {
     name: "Between The Sheets",
     picture: "Image/betweenTheSheets.jpg",
-    url: "betweenTheSheets.html",
+    url: "html/betweenTheSheets.html",
     ingredients: "cognac citron benedectine"
   },
   {
     name: "Jack Rose",
     picture: "Image/jackRose.jpg",
-    url: "jackRose.html",
+    url: "html/jackRose.html",
     ingredients: "calvados citron grenadine œuf"
   },
   {
     name: "Cosmopolitan",
     picture: "Image/cosmopolitan.jpg",
-    url: "cosmopolitan.html",
+    url: "html/cosmopolitan.html",
     ingredients: "vodka triple sec cranberrie citron vert"
   }
 ];
@@ -164,21 +164,20 @@ search.addEventListener("click", function () {
   const search1 = document.querySelector('#ingredient1').value;
   const search2 = document.querySelector('#ingredient2').value;
   cards.innerHTML = '';
+  document.querySelector('#empty').setAttribute('style', "display: none");
   if(search1 === "1" && search2 === "2"){
     document.querySelector('#empty').removeAttribute('style');
   } else if(search1 === "1") {
-    document.querySelector('#empty').setAttribute('style', "display: none");
+    
     for (let i = 0; i < cocktailsToAdopt.length; i++) {
     if (cocktailsToAdopt[i].ingredients.includes(search2)) {
       createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
     }}} else if(search2 === "2") {
-      document.querySelector('#empty').setAttribute('style', "display: none");
       for (let i = 0; i < cocktailsToAdopt.length; i++) {
       if (cocktailsToAdopt[i].ingredients.includes(search1)) {
         createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
       }}} else {
-        document.querySelector('#empty').setAttribute('style', "display: none");
-        for (let i = 0; i < cocktailsToAdopt.length; i++) {
+          for (let i = 0; i < cocktailsToAdopt.length; i++) {
         if (cocktailsToAdopt[i].ingredients.includes(search1) && cocktailsToAdopt[i].ingredients.includes(search2)) {
           createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
         }}}
