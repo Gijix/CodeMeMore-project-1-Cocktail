@@ -100,7 +100,7 @@ a {
   color: white;
 }
 body {
-  background-image: url("Image/imageFond.jpg");
+  background: url("Image/imageFond.jpg") no-repeat center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -400,6 +400,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.tutoCardMateriel {
+  display: flex;
+  flex-direction: column;
+}
 .materielCard h3,
 .tutoCardMateriel h3,
 .tutoCardIngredient h3 {
@@ -414,6 +418,9 @@ body {
   margin-top: 30px;
   padding-top: 10px;
   border-top: 1px solid #834f1e;
+}
+.tutoCardMateriel p {
+  flex-wrap: wrap;
 }
 .tutoCardIngredient {
   margin: 30px;
@@ -444,23 +451,32 @@ body {
   border-bottom-right-radius: 20px;
 }
 .imgShaker {
-  background-image: url(Image/imgShaker.jpg);
+  background: url(Image/imgShaker.jpg) no-repeat center fixed;
   background-attachment: local;
 }
 .imgSpoon {
-  background-image: url(Image/imgSpoon.jpg);
+  background: url(Image/imgSpoon.jpg) no-repeat center fixed;
+  background-attachment: local;
+  background-position-y: -10px;
 }
 .imgJigger {
-  background-image: url(Image/imgJigger.jpg);
+  background: url(Image/imgJigger.jpg) no-repeat center fixed;
+  background-attachment: local;
 }
 .imgStrainer {
-  background-image: url(Image/imgStrainer.jpg);
+  background: url(Image/imgStrainer.jpg) no-repeat center fixed;
+  background-attachment: local;
+  background-position: left;
 }
 .imgFineStrainer {
-  background-image: url(Image/imgFineStrainer.jpg);
+  background: url(Image/imgFineStrainer.jpg) no-repeat center fixed;
+  background-attachment: local;
 }
 .video {
   border-radius: 20px;
+  width: 560px;
+  height: 315px;
+  align-self: center;
 }
 .video:hover {
   box-shadow: #834f1e 0px 0px 5px;
@@ -837,7 +853,11 @@ a {
     border: 1px solid rgb(131, 79, 30);
     box-shadow: 0 0 5px rgb(131, 79, 30);
   }
-
+  /* page tuto media 1024 */
+  .video {
+    width: 392px;
+    height: 220.5px;
+  }
   /* Footer media 1024 */
   .contact,
   .telechargement,
@@ -940,7 +960,11 @@ a {
   .cocktailFavori {
     display: none;
   }
-
+  /* page tuto media 600 */
+  .video {
+    width: 336px;
+    height: 189px;
+  }
   /* footer media 600 */
   .mention,
   .politique,
