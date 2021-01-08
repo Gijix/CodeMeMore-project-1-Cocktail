@@ -4,8 +4,9 @@ const burgerMenu = document.querySelector("#menu-burger");
 
 // Detect all clicks on the document
 document.addEventListener("click", function(event) {
+  if(mainMenu.className === ''){ return}
   // If user clicks inside the element, do nothing
-	if (event.target.closest("#menu") || event.target.closest("#menu-burger")) return;
+	else if (event.target.closest("#menu") || event.target.closest("#menu-burger")) return;
 	// If user clicks outside the element, hide it!
   mainMenu.classList.add("invisible");
   // and return the burger icon to  unclicked
