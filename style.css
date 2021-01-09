@@ -83,8 +83,11 @@
   flex-direction: column;
   padding: 10%;
 }
-input {
+input, textarea {
   margin: 5px 0px;
+}
+textarea {
+  border-radius: 5px;
 }
 .abus {
   font-family: arial;
