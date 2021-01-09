@@ -165,10 +165,10 @@ search.addEventListener("click", function () {
   const search2 = document.querySelector('#ingredient2').value;
   cards.innerHTML = '';
   document.querySelector('#empty').setAttribute('style', "display: none");
+  document.querySelector('#empty1').setAttribute('style', "display: none");
   if(search1 === "1" && search2 === "2"){
     document.querySelector('#empty').removeAttribute('style');
   } else if(search1 === "1") {
-    
     for (let i = 0; i < cocktailsToAdopt.length; i++) {
     if (cocktailsToAdopt[i].ingredients.includes(search2)) {
       createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
@@ -180,5 +180,7 @@ search.addEventListener("click", function () {
           for (let i = 0; i < cocktailsToAdopt.length; i++) {
         if (cocktailsToAdopt[i].ingredients.includes(search1) && cocktailsToAdopt[i].ingredients.includes(search2)) {
           createCard(cocktailsToAdopt[i].name, cocktailsToAdopt[i].picture, cocktailsToAdopt[i].url);
-        }}}
+          
+        }}if(cards.innerHTML == ''){document.querySelector('#empty1').removeAttribute('style');}
+      }
 });
